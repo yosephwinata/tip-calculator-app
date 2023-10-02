@@ -1,0 +1,11 @@
+body {
+  font-family: "Space Mono", monospace;
+  font-weight: $weight-bold;
+  line-height: 1;
+}
+
+.label {
+  font-size: $font-size-sm;
+  color: $color-dark-grayish-cyan;
+  display: inline-block;
+}

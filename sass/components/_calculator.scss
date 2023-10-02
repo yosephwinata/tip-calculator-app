@@ -1,0 +1,121 @@
+.calculator {
+  width: 92rem;
+  height: 48.1rem;
+  background-color: $color-white;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+
+  &__input-section {
+    padding: 4.5rem 3rem 4.8rem 4.5rem;
+  }
+
+  &__tip {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 1.4rem;
+    row-gap: 1.6rem;
+    margin-bottom: 4rem;
+
+    &--label {
+      margin-bottom: 1.6rem;
+    }
+
+    &--input {
+      padding: 0 1rem;
+
+      &::placeholder {
+        text-align: center;
+      }
+    }
+  }
+
+  &__button {
+    height: 4.8rem;
+    line-height: 4.8rem;
+    background-color: $color-very-dark-cyan;
+    color: $color-white;
+    font-size: $font-size-lg;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-light-grayish-cyan;
+      color: $color-very-dark-cyan;
+    }
+
+    &:active {
+      background-color: $color-strong-cyan;
+      color: $color-very-dark-cyan;
+    }
+
+    &.clicked {
+      background-color: $color-strong-cyan;
+      color: $color-very-dark-cyan;
+    }
+  }
+
+  &__bill--wrapper {
+    margin-bottom: 4rem;
+  }
+
+  &__output-section {
+    background-color: $color-very-dark-cyan;
+    margin: 3.2rem 3.2rem 3.2rem 1.8rem;
+    border-radius: 15px;
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__amount-top {
+    margin-bottom: 5.3rem;
+  }
+
+  &__amount-container {
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    &--right {
+      font-size: $font-size-xl;
+      color: $color-strong-cyan;
+    }
+
+    &--desc {
+      font-size: $font-size-sm;
+      color: $color-white;
+    }
+
+    &--per-person {
+      font-size: $font-size-xs;
+      color: $color-grayish-cyan;
+    }
+  }
+
+  &__reset-button {
+    background-color: $color-strong-cyan;
+    width: 100%;
+    height: 4.8rem;
+    border: none;
+    font-size: $font-size-md;
+    color: $color-very-dark-cyan;
+    border-radius: 5px;
+    margin-top: auto;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-light-grayish-cyan;
+      color: $color-very-dark-cyan;
+    }
+  }
+}
