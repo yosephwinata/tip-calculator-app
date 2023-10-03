@@ -1,4 +1,8 @@
 .logo {
   display: block;
   margin: 16.3rem auto 8.8rem;
+
+  @include respond(mobile) {
+    margin: 5rem auto 4.1rem;
+  }
 }
